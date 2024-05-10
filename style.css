@@ -1,0 +1,72 @@
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: none;
+  padding: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-image: url("images/day1.jpg");
+  transition: background-image 0.75s ease-in-out;
+}
+h1, label {
+  padding: 20px;
+  font-family:  'Roboto', Arial, sans-serif;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container {
+  text-align: center;
+  margin-top: 50px;
+  width: 450px;
+}
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .weather-grid h3 {
+    flex: 1 0 20%; /* Adjust as needed */
+    margin: 10px;
+  } 
+  
+input {
+  margin: 20px 0;
+}
+
+#weather {
+  margin-top: 15px;
+  size: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#city {
+    width: 50%;
+    height: 40px; 
+    margin: auto;
+    display: block;
+    font-size: 18px;
+  }
+.button {
+    margin: 10px;
+    background-color: #251dff; /* Green */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #055bd3; /* Darker green */
+    color: white;
+}
